@@ -10,7 +10,8 @@ import {
   Upload, 
   Menu, 
   X,
-  Bot
+  Bot,
+  Shield
 } from "lucide-react";
 
 const Navigation = () => {
@@ -23,6 +24,7 @@ const Navigation = () => {
     { to: "/login", label: "Login", icon: LogIn },
     { to: "/upload", label: "Upload", icon: Upload },
     { to: "/chat", label: "Chat", icon: MessageSquare },
+    { to: "/admin", label: "Admin", icon: Shield },
   ];
 
   const isActive = (path: string) => location.pathname === path;
